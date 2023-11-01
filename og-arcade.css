@@ -51,12 +51,13 @@ body {
 }
 
 .headboard {
-    width: 1200px;
+    width: 1370px;
     height: 200px;
     background-color: rgb(41, 37, 87);
     position: absolute;
-    bottom: -15px; 
+    translate: -84px -185px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 3px;
 }
 
 .soundpanel {
@@ -64,11 +65,54 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
     background-color: rgb(76, 64, 210);
     position: absolute;
-    width: 1200px;
-    height: 300px;
+    width: 1370px;
+    height: 200px;
     background-color: rgb(41, 37, 87);
     rotate: 1 0 0 -70deg;
-    translate: 0px 15px;
+    translate: -83px 15px;
     transform-origin: top;
     transform: skewX(37.5deg);
+    border-radius: 3px;
   }
+
+.monitor{
+  perspective: 500px;
+}
+
+.backpanel {
+  width: 1370px;
+  height: 600px;
+  translate: 50px -14px -157px;
+  rotate: 1 0 0 3deg;
+  transform: skewX(-1.5deg);
+  z-index: -1;
+  position: absolute;
+  border-radius: 1%/50%;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4) inset;
+  background-color: #31383c;
+}
+.monitorbezel {
+  width: 1370px;
+  height: 600px;
+  translate: 50px -14px -157px;
+  rotate: 1 0 0 3deg;
+  transform: skewX(-1.5deg);
+  z-index: 0;
+  position: absolute;
+  border-radius: 1%/50%;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3) inset 1 1 10px 10px rgba(250, 239, 239, 0.3) inset;
+  background-image: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+  
+}
+
+.screen {
+  position: relative;
+  z-index: -1;
+  width: 1270px; 
+  height: 550px; 
+  background: #91dc91;
+  rotate: 1 0 0 3deg;
+  translate: 112px 12px -172px;
+  transform: skewX(-1.5deg);
+  border-radius: 1%/80%;
+}
