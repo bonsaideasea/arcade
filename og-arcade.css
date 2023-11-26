@@ -34,7 +34,7 @@ body {
     width: 380px;
     transform-style: preserve-3d;
     animation: spin 6s linear infinite;
-   animation-play-state: running;
+    animation-play-state: running;
     transition: all 1.5s;
     transform: rotateY(89deg);
 }
@@ -52,8 +52,8 @@ body {
 
 .headboard {
     width: 1370px;
-    height: 200px;
-    background-color: rgb(41, 37, 87);
+    height: 150px;
+    background-color: rgb(47, 43, 94);
     position: absolute;
     translate: -84px -185px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
@@ -65,15 +65,59 @@ body {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
     background-color: rgb(76, 64, 210);
     position: absolute;
-    width: 1370px;
+    width: 1369px;
     height: 200px;
     background-color: rgb(41, 37, 87);
     rotate: 1 0 0 -70deg;
-    translate: -83px 15px;
+    translate: -83px -35px;
     transform-origin: top;
     transform: skewX(37.5deg);
     border-radius: 3px;
   }
+
+.speaker {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  gap: 9px;
+  align-items: center;
+  padding-top: 29px;
+}
+
+.hole1 {
+  width: 100px;
+  height: 15px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.hole2 {
+  width: 130px;
+  height: 15px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.hole3 {
+  width: 160px;
+  height: 15px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.hole4 {
+  width: 130px;
+  height: 15px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.hole5 {
+  width: 100px;
+  height: 15px;
+  background-color: black;
+  border-radius: 30px;
+}
 
 .monitor{
   perspective: 500px;
@@ -82,7 +126,7 @@ body {
 .backpanel {
   width: 1370px;
   height: 600px;
-  translate: 50px -14px -157px;
+  translate: 50px -64px -157px;
   rotate: 1 0 0 3deg;
   transform: skewX(-1.5deg);
   z-index: -1;
@@ -95,7 +139,7 @@ body {
 .monitorbezel {
   width: 1370px;
   height: 600px;
-  translate: 50px -14px -157px;
+  translate: 50px -64px -157px;
   rotate: 1 0 0 3deg;
   transform: skewX(-1.5deg);
   z-index: 0;
@@ -131,7 +175,7 @@ body {
   height: 550px; 
   background: #1e2e28;
   rotate: 1 0 0 3deg;
-  translate: 112px 12px -172px;
+  translate: 112px -38px -172px;
   transform: skewX(-1.5deg);
   border-radius: 1%/80%;
 }
@@ -151,4 +195,87 @@ video {
   100% {
     transform: translateY(0px);
   }
+}
+
+.controlbox {
+  perspective: 500px;
+}
+
+.controlpanel {
+  width: 1371px;
+  height: 200px;
+  background-image: radial-gradient(ellipse at bottom, rgb(31, 28, 66) 0%, rgba(31, 28, 66, 0) 100%);
+  box-shadow: 0 0 0 -2px rgba(0, 0, 0, 0.3) inset;
+  background-color: rgb(76, 64, 210);
+  position: absolute;
+  background-color: rgb(41, 37, 87);
+  rotate: 1 0 0 50deg;
+  translate: -10px -130px -77px;
+  transform: skewX(-32deg);
+  border-radius: 5px;
+}
+
+.consolebuttons {
+  display: flex;
+  align-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.column1{
+  flex-basis: 100;
+
+}
+
+.column2 > .consolebuttons{
+  flex-basis: 100;
+  align-items: space-between ;
+  align-content: row;
+}
+
+.column3{
+  flex-basis: 100;
+}
+.up {
+  width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid red;
+}
+
+.right{ 
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid red;
+	border-bottom: 25px solid transparent;
+}
+
+.left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid red;
+	border-bottom: 25px solid transparent;
+}
+
+.down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid red;
+}
+
+.bottompanel {
+  width: 1371px;
+  height: 55px;
+  background-color: rgb(47, 43, 94);
+  position: absolute;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 3px;
+  translate: -71px 32px -2px;
 }

@@ -8,13 +8,16 @@ body {
   padding: 10px;
 }
 
-/* Arcade Machine */
+/* ARCADE MACHINE */
 .stage {
   perspective: 1600px;
   perspective-origin: 50% 50%;
   transform-origin: 100% 100%;
   margin: 80px 0 100px 100px;
   transition: transform 1s;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 /* Zoom */
@@ -22,12 +25,9 @@ body {
   position: relative;
   width: 380px;
   transform-style: preserve-3d;
-  transform: scale(0.5);
+  transform: scale(0.4);
   transition: all 1s;
-}
-
-.arcademachinewrap:hover {
-  transform: scale(1);
+  z-index: 0;
 }
 
 /* Rotate */
@@ -35,17 +35,11 @@ body {
   position: relative;
   width: 380px;
   transform-style: preserve-3d;
-  animation: spin 6s linear infinite;
+  animation: spin 5s linear infinite;
   animation-play-state: running;
   transition: all 1.5s;
   transform: rotateY(89deg);
 }
-
-.arcademachinewrap:hover .arcademachine {
-  transform: rotateY(0deg);
-  animation: none;
-}
-/*
 @keyframes spin {
   from {
     transform: rotateY(0);
@@ -54,7 +48,7 @@ body {
     transform: rotateY(360deg);
   }
 }
-*/
+
 .box {
   position: relative;
   width: 380px;
@@ -79,7 +73,7 @@ body {
   position: absolute;
   width: 360px;
   height: 140px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .capfront, .capback {
@@ -87,7 +81,7 @@ body {
   position: absolute;
   width: 380px;
   height: 140px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .captop, .capbottom {
@@ -95,7 +89,7 @@ body {
   position: absolute;
   width: 380px;
   height: 360px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .capright {
@@ -124,19 +118,19 @@ body {
 }
 
 .captop {
-  background-image: radial-gradient(ellipse at top, rgb(31, 28, 66) 0%, rgba(31, 28, 66, 0) 100%);
+  background-image: radial-gradient(ellipse at top, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset;
   transform-origin: top left;
   transform: rotateX(90deg) translateY(-180px);
 }
 
 .capbottom {
-  background-image: radial-gradient(ellipse at top, rgb(31, 28, 66) 0%, rgba(31, 28, 66, 0) 100%);
+  background-image: radial-gradient(ellipse at top, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
   transform: rotateX(270deg) translateY(-180px) translateZ(140px);
   transform-origin: top left;
-  background-color: rgb(41, 37, 87);
-  height: 70px; /* 70px */
+  background-color: rgb(45, 43, 43);
+  height: 160px;
 }
 
 /* Panel */
@@ -152,7 +146,7 @@ body {
   position: absolute;
   width: 120px;
   height: 400px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .panelfront, .panelback {
@@ -160,7 +154,7 @@ body {
   position: absolute;
   width: 380px;
   height: 400px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .paneltop, .panelbottom {
@@ -168,7 +162,7 @@ body {
   position: absolute;
   width: 380px;
   height: 120px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 .panelright {
@@ -197,7 +191,7 @@ body {
   transform-origin: bottom center;
   transform: translateY(-325px) translateZ(-60px) rotateX(32deg);
   background-color: rgb(96, 91, 88);
-  background-image: radial-gradient(ellipse at center, rgb(128, 142, 162) 0%, rgb(128, 142, 162) 50%, rgb(71, 92, 105) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: radial-gradient(ellipse at center, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 50%, rgbrgb(45, 43, 43) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
 }
 
@@ -205,14 +199,14 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset;
   transform-origin: top left;
   transform: rotateX(90deg) translateY(-60px);
-  background-color: rgb(68, 62, 145);
+  background-color: rgb(45, 43, 43);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .panelbottom {
   transform: rotateX(270deg) translateY(-60px) translateZ(400px);
   transform-origin: top left;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
 }
 
 /* Main */
@@ -230,7 +224,7 @@ body {
   position: absolute;
   width: 320px;
   height: 800px;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
   text-align: center;
 }
 
@@ -248,7 +242,7 @@ body {
   position: absolute;
   width: 380px;
   height: 800px;
-  background-color: rgb(96, 91, 88);
+  background-color: rgb(45, 43, 43);
   background-image: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
 }
@@ -261,13 +255,13 @@ body {
 }
 
 .mainright {
-  background-image: linear-gradient(290deg, rgb(20, 18, 43) 0%, rgba(20, 18, 43, 0) 51%, rgba(20, 18, 43, 0) 100%);
+  background-image: linear-gradient(290deg, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 51%, rgb(45, 43, 43) 100%);
   transform-origin: top right;
   transform: rotateY(-270deg) translateX(160px) translateZ(60px); /*  translateZ(30px) */
 }
 
 .mainleft {
-  background-image: linear-gradient(70deg, rgb(20, 18, 43) 0%, rgba(20, 18, 43, 0) 51%, rgba(20, 18, 43, 0) 100%);
+  background-image: linear-gradient(70deg, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 51%, rgb(45, 43, 43) 100%);
   transform-origin: top left;
   transform: rotateY(270deg) translateX(-160px);
 }
@@ -288,7 +282,7 @@ body {
 .mainbottom {
   transform: rotateX(270deg) translateY(-160px) translateZ(800px);
   transform-origin: top left;
-  background-color: rgb(41, 37, 87);
+  background-color: rgb(45, 43, 43);
   box-shadow: 0 0 160px 190px rgba(0, 0, 0, 0.7);
 }
 
@@ -330,15 +324,6 @@ body {
   animation: none;
 }
 
-.invader1.big, .invader2.big, .invader3.big {
-  font-size: 10px;
-  height: 15em;
-  display: block;
-  opacity: 0.8;
-  position: relative;
-  left: 20px;
-  animation: none;
-}
 
 .invader1.big {
   left: 20px;
@@ -452,16 +437,19 @@ body {
     opacity: 1;
   }
 }
-.logo {
-  display: inline-block;
-  padding-top: 130px;
-  text-align: center;
-  color: #F0D73F;
-  font: bold 38px/40px Arial;
-  transform-origin: 50% 100%;
-  transform: perspective(100px) rotateX(-25deg);
-  backface-visibility: hidden;
-  text-shadow: -1px -1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0), 0 -3px 1px rgb(255, 0, 0), 0 -5px 1px rgb(0, 0, 0);
+
+#logofront {
+   position: relative;
+   top: -30px;
+   width: 300px;
+   height: 110px;
+}
+
+#logoback {
+  position: relative;
+  top: -35px;
+  width: 380px;
+  height: 960px;
 }
 
 .cap .logo {
