@@ -25,7 +25,7 @@ body {
   position: relative;
   width: 380px;
   transform-style: preserve-3d;
-  transform: scale(0.4);
+  transform: scale(0.45);
   transition: all 1s;
   z-index: 0;
 }
@@ -35,7 +35,7 @@ body {
   position: relative;
   width: 380px;
   transform-style: preserve-3d;
-  animation: spin 10s linear infinite;
+  animation: spin 12s linear infinite;
   animation-play-state: running;
   transition: all 1.5s;
   transform: rotateY(89deg);
@@ -73,7 +73,7 @@ body {
   position: absolute;
   width: 360px;
   height: 140px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
 }
 
 .capfront, .capback {
@@ -81,7 +81,7 @@ body {
   position: absolute;
   width: 380px;
   height: 140px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
 }
 
 .captop, .capbottom {
@@ -89,7 +89,7 @@ body {
   position: absolute;
   width: 380px;
   height: 360px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);
 }
 
 .capright {
@@ -114,22 +114,22 @@ body {
 .capback {
   transform-origin: bottom center;
   transform: translateZ(-180px) rotateY(180deg);
-  background-color: rgb(96, 91, 88);
+  background-color: rgb(22, 21, 21);;
 }
 
 .captop {
-  background-image: radial-gradient(ellipse at top, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 100%);
+  background-image: radial-gradient(ellipse at top, rgb(22, 21, 21); 0%, rgbrgb(22, 21, 21); 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset;
   transform-origin: top left;
   transform: rotateX(90deg) translateY(-180px);
 }
 
 .capbottom {
-  background-image: radial-gradient(ellipse at top, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 100%);
+  background-image: radial-gradient(ellipse at top, rgb(22, 21, 21); 0%, rgb(22, 21, 21); 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
   transform: rotateX(270deg) translateY(-180px) translateZ(140px);
   transform-origin: top left;
-  background-color: rgb(45, 43, 43);
+  background-color:rgb(22, 21, 21);;
   height: 160px;
 }
 
@@ -146,7 +146,7 @@ body {
   position: absolute;
   width: 120px;
   height: 400px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);
 }
 
 .panelfront, .panelback {
@@ -154,7 +154,7 @@ body {
   position: absolute;
   width: 380px;
   height: 400px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);
 }
 
 .paneltop, .panelbottom {
@@ -162,7 +162,7 @@ body {
   position: absolute;
   width: 380px;
   height: 120px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
 }
 
 .panelright {
@@ -190,7 +190,7 @@ body {
   height: 340px;
   transform-origin: bottom center;
   transform: translateY(-325px) translateZ(-60px) rotateX(32deg);
-  background-color: rgb(96, 91, 88);
+  background-color: rgb(40, 37, 37);;
   background-image: radial-gradient(ellipse at center, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 50%, rgbrgb(45, 43, 43) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
 }
@@ -199,14 +199,14 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset;
   transform-origin: top left;
   transform: rotateX(90deg) translateY(-60px);
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .panelbottom {
   transform: rotateX(270deg) translateY(-60px) translateZ(400px);
   transform-origin: top left;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
 }
 
 /* Main */
@@ -224,7 +224,7 @@ body {
   position: absolute;
   width: 320px;
   height: 800px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
   text-align: center;
 }
 
@@ -242,7 +242,7 @@ body {
   position: absolute;
   width: 380px;
   height: 800px;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);;
   background-image: radial-gradient(ellipse at bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3) inset;
 }
@@ -255,13 +255,13 @@ body {
 }
 
 .mainright {
-  background-image: linear-gradient(290deg, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 51%, rgb(45, 43, 43) 100%);
+  background-image: linear-gradient(290deg,rgb(22, 21, 21); 0%, rgb(22, 21, 21); 51%, rgb(22, 21, 21); 100%);; 0%, rgb(22, 21, 21); 51%, rgb(22, 21, 21); 100%);
   transform-origin: top right;
   transform: rotateY(-270deg) translateX(160px) translateZ(60px); /*  translateZ(30px) */
 }
 
 .mainleft {
-  background-image: linear-gradient(70deg, rgb(45, 43, 43) 0%, rgb(45, 43, 43) 51%, rgb(45, 43, 43) 100%);
+  background-image: linear-gradient(70deg, rgb(22, 21, 21); 0%, rgb(22, 21, 21); 51%, rgb(22, 21, 21); 100%);
   transform-origin: top left;
   transform: rotateY(270deg) translateX(-160px);
 }
@@ -282,7 +282,7 @@ body {
 .mainbottom {
   transform: rotateX(270deg) translateY(-160px) translateZ(800px);
   transform-origin: top left;
-  background-color: rgb(45, 43, 43);
+  background-color: rgb(22, 21, 21);
   box-shadow: 0 0 160px 190px rgba(0, 0, 0, 0.7);
 }
 
@@ -406,7 +406,7 @@ body {
 .insertcoin {
   padding-top: 20px;
   text-align: center;
-  font: bold 26px/30px Arial;
+  font: bold 20px Arial;
   color: rgb(255, 255, 255);
   z-index: 1;
   opacity: 0;
@@ -456,20 +456,25 @@ body {
   z-index: 0;
 }
 
-#ssRtop{
+#meslogo{
+  position: relative;
+  top: -940px;
+  left: -75px;
+}
+#portrait{
   position:relative;
   z-index: 2;
-  top: -1060px;
-  left: -50px;
-  height: 550px;
-  width: 400px;
+  top: -135px;
+  left: -60px;
+  height: 490px;
+  width: 420px;
 }
 
 #gotdubz{
   position:relative;
   z-index: 3;
-  top: -1175px;
-  left: -30px;
+  top: -336px;
+  left: 26px;
 }
 
 .cap .logo {
@@ -540,7 +545,7 @@ body {
   position: relative;
   float: right;
   width: 100px;
-  height: 60px;
+  height: 50px;
   border-radius: 3px;
   background: #aaa;
   margin: 20px;
@@ -548,11 +553,11 @@ body {
 }
 
 .coinslot:before {
-  content: "Insert coin";
+  content: "$1.40";
   position: absolute;
-  left: 20px;
-  top: 20px;
-  font: bold 10px Arial;
+  left: 17px;
+  top: 14px;
+  font: 22px black garamond;
   color: #111;
 }
 
