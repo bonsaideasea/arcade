@@ -35,7 +35,7 @@ body {
   position: relative;
   width: 380px;
   transform-style: preserve-3d;
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
   animation-play-state: running;
   transition: all 1.5s;
   transform: rotateY(89deg);
@@ -324,19 +324,6 @@ body {
   animation: none;
 }
 
-
-.invader1.big {
-  left: 20px;
-}
-
-.invader2.big {
-  left: 80px;
-}
-
-.invader3.big {
-  left: 20px;
-}
-
 .row {
   width: 144em;
   height: 15em;
@@ -445,11 +432,44 @@ body {
    height: 110px;
 }
 
-#logoback {
+#ssB {
   position: relative;
-  top: -35px;
-  width: 380px;
-  height: 960px;
+  top: -61px;
+  width: 392px;
+  height: 989px;
+  left: -6px;
+}
+
+#ssR{
+  position: relative;
+  height: 993px;
+  width: 362px;
+  top: -65px;
+  left: -34px;
+}
+#ssL{
+  position: relative;
+  height: 990px;
+  width: 362px;
+  top: -64px;
+  left: -3px;
+  z-index: 0;
+}
+
+#ssRtop{
+  position:relative;
+  z-index: 2;
+  top: -1060px;
+  left: -50px;
+  height: 550px;
+  width: 400px;
+}
+
+#gotdubz{
+  position:relative;
+  z-index: 3;
+  top: -1175px;
+  left: -30px;
 }
 
 .cap .logo {
