@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "arcade-codepen.css">
+    <link rel = "stylesheet" href = "arcade.css">
     <title>Document</title>
 </head>
 <body>
-    <!--arcade machine-->
-    <div class="stage">
+  <script src="arcade.js"></script>
+  <h1 class="pressStart" id="font1"> PRESS START </h1>
+  <div class="stage">
         <div class="arcademachinewrap">
             <div class="arcademachine">
                 <div class="box">
@@ -19,7 +20,6 @@
                             <div class="logo">
                                 <img src="dizzylogo.png" id="logofront">
                             </div>
-                            <div class="skull1 small"></div>
                         </div>
                         <div class="side capbottom"></div>
                         <div class="side captop"></div>
@@ -38,15 +38,16 @@
                         <div class="side panelbottom"></div>
                         <div class="side panelback">
                             <div class="screen">
-                                <div class="space-invaders-move">
-                                  <div class="space-invaders">
-                                    <div class="row invader3"></div>
-                                    <div class="row double invader2"></div>
-                                    <div class="row double invader1"></div>
-                                  </div>
-                                </div>
-                                <div class="gameover">GAME OVER</div>
-                                <div class="insertcoin">INSERT COIN</div>
+                                <div class="screen-content">
+                                    <div class="crtv"></div>
+                                    <div class="ninja-turtles">
+                                        <img src="donatello.gif">
+                                        <img src="michelangelo.gif">
+                                        <img src="raphael.gif">
+                                        <img src="leonardo.gif">
+                                    </div>
+                                </div>                               
+                                <!--<div class="gameover">GAME OVER</div>-->
                             </div>
                         </div>
                         <div class="side paneltop">
@@ -86,9 +87,5 @@
             </div>
         </div>
     </div>
-    
-
 </body>
 </html>
-
-
