@@ -4,88 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "arcade.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>dizzygotdubz</title>
 </head>
-<body>
-  <script src="arcade.js"></script>
-  <h1 class="pressStart" id="font1"> PRESS START </h1>
-  <div class="stage">
-        <div class="arcademachinewrap">
-            <div class="arcademachine">
-                <div class="box">
-                    <div class="box cap">     
-                        <div class="side capleft"></div>
-                        <div class="side capright"></div>
-                        <div class="side capfront">
-                            <div class="logo">
-                                <img src="dizzylogo.png" id="logofront">
+<body> 
+    <script src="arcade.js"></script>
+    <div id="arcadePage" class="container-fluid">
+        <h1 id="pressStart"> PRESS START </h1>
+        <div class="stage">
+            <div class="arcademachinewrap">
+                <div class="arcademachine">
+                    <div class="box">
+                        <div class="box cap">     
+                            <div class="side capleft"></div>
+                            <div class="side capright"></div>
+                            <div class="side capfront">
+                                <div class="logo">
+                                    <img src="dizzylogo.png" class="glitch-img" id="logofront">
+                                </div>
                             </div>
-                        </div>
-                        <div class="side capbottom"></div>
-                        <div class="side captop"></div>
-                        <div class="side capback"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box panel">
-                        <div class="side panelright"></div>
-                        <div class="side panelleft"></div>
-                        <div class="side panelfront">
-                            <div class="coinslot"></div>
-                            <img src="think.png" id="portrait">
-                            <img src="gotdubz.png" id="gotdubz">140</h2>
-                        </div>
-                        <div class="side panelbottom"></div>
-                        <div class="side panelback">
-                            <div class="screen">
-                                <div class="screen-content">
-                                    <div class="crtv"></div>
-                                    <div class="ninja-turtles">
-                                        <img src="donatello.gif">
-                                        <img src="michelangelo.gif">
-                                        <img src="raphael.gif">
-                                        <img src="leonardo.gif">
-                                    </div>
-                                </div>                               
-                                <!--<div class="gameover">GAME OVER</div>-->
-                            </div>
-                        </div>
-                        <div class="side paneltop">
-                            <div class="playerleft">
-                                <div class="button left"></div>
-                                <div class="button right"></div>
-                            </div>
-                            <div class="playercenter">
-                                <div class="button fire"></div>
-                            </div>
-                            <div class="playerright">
-                                <div class="button players1"></div><br>
-                                <div class="button players2"></div>
-                            </div>
+                            <div class="side capbottom"></div>
+                            <div class="side captop"></div>
+                            <div class="side capback"></div>
                         </div>
                     </div>
-                </div>
-                <div class="box main">
-                    <div class="side mainright">
-                        <div class="logo"></div>
-                        <img src="ssR.png" id="ssR">
-                        <img src="mes.png" id="meslogo">
+                    <div class="box">
+                        <div class="box panel">
+                            <div class="side panelright"></div>
+                            <div class="side panelleft"></div>
+                            <div class="side panelfront">
+                                <div class="coinslot"></div>
+                                <img src="think.png" id="portrait">
+                                <img src="gotdubz.png" id="gotdubz"></h2>
+                            </div>
+                            <div class="side panelbottom"></div>
+                            <div class="side panelback">
+                                <div class="screen">
+                                    <div class="screen-content">
+                                        <div class="crtv"></div>
+                                        <div class="ninja-turtles">
+                                            <img src="donatello.gif">
+                                            <img src="michelangelo.gif">
+                                            <img src="raphael.gif">
+                                            <img src="leonardo.gif">
+                                        </div>
+                                    </div>          
+                                </div>
+                            </div>
+                            <div class="side paneltop">
+                                <div class="playerleft">
+                                    <div class="button left"></div>
+                                    <div class="button right"></div>
+                                </div>
+                                <div class="playercenter">
+                                    <div class="button fire"></div>
+                                </div>
+                                <div class="playerright">
+                                    <div class="button players1"></div><br>
+                                    <div class="button players2"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="side mainright inner"></div>
-                    <div class="side mainleft inner"></div>
-                    <div class="side mainleft">
-                        <div class="logo"></div>
-                        <img src="ssL.png" id="ssL">
-                
-                    </div>
-                    <div class="side mainbottom"></div>
-                    <div class="side mainback">
-                        <img src="ssB.png" id="ssB">
-                        <div class="powersocket"></div>
+                    <div class="box main">
+                        <div class="side mainright">
+                            <div class="logo"></div>
+                            <img src="ssR.png" id="ssR">
+                            <img src="mes.png" id="meslogo">
+                        </div>
+                        <div class="side mainright inner"></div>
+                        <div class="side mainleft inner"></div>
+                        <div class="side mainleft">
+                            <div class="logo"></div>
+                            <img src="ssL.png" id="ssL">
+                    
+                        </div>
+                        <div class="side mainbottom"></div>
+                        <div class="side mainback">
+                            <img src="ssB.png" id="ssB">
+                            <div class="powersocket"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+   </div>
 </body>
 </html>
