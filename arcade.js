@@ -12,8 +12,6 @@ hideAP.onclick = () => {
     });
   });
   //hideAP.style.display = 'none';
-  //let blankScreen = hideAP.style.display;
-  //hideAP.style.backgroundColor = "black";
 }
 
 hideAP.onkeyup = () => {
@@ -29,5 +27,4 @@ hideAP.onkeyup = () => {
   });
    //hideAP.style.display = 'none';
 }
-
 
