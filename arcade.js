@@ -16,7 +16,7 @@ hideAP.onclick = () => {
   //hideAP.style.backgroundColor = "black";
 }
 
-hideAP.onkeyup = () => {
+/*hideAP.onkeyup = () => {
   $(function() {
     $(".glitch-img").mgGlitch({
          destroy: false,
@@ -28,6 +28,6 @@ hideAP.onkeyup = () => {
     });
   });
    //hideAP.style.display = 'none';
-}
+} */
 
 
